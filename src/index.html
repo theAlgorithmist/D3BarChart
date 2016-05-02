@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <base href="/">
+  <!-- <script>document.write('<base href="' + document.location + '" />');</script> -->
+
+  <meta charset="utf-8">
+  <title>The Algorithmist - Angular 2/D3 Bar Chart Demo</title>
+
+  <!-- Collective styling for the entire app -->
+  <link rel="stylesheet" type="text/css" href="css/a2d3-app.css">
+</head>
+<body>
+    
+  <!-- Angular 2 (beta) D3 Demo -->
+  <d3-demo>Loading ...</d3-demo>
+
+  <!-- The usual suspects ... -->
+  <script src='node_modules/angular2/bundles/angular2-polyfills.js'></script>
+  <script src='node_modules/es6-shim/es6-shim.js'></script>
+  <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+  <script src='node_modules/systemjs/dist/system.src.js'></script>
+  <script src='node_modules/rxjs/bundles/Rx.js'></script>
+  <script src='node_modules/angular2/bundles/angular2.dev.js'></script>
+  <script src='node_modules/d3/d3.min.js'></script>
+  <script>
+    System.config({
+      packages: {        
+        app: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+      },
+
+      map: {
+       "d3": "node_modules/d3/d3.min.js"
+      }
+   });
+ 
+   System.import('app/boot')
+     .then(window.onLoad)
+     .catch(console.error.bind(console));
+  </script>
+
+</body>
+</html>
