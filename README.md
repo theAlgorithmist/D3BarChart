@@ -77,6 +77,6 @@ Apache 2.0
 
 [//]: # (kudos http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-[The Algorithmist]: <http://algorithmist.net>
+[The Algorithmist]: <https://www.linkedin.com/in/jimarmstrong>
 [ng-Vegas demo]: <https://github.com/gdi2290/ng-vegas-angular2-d3>
 [statistical analysis of tabular data]: <https://github.com/theAlgorithmist/Table>
